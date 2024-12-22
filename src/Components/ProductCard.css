@@ -1,0 +1,68 @@
+.product-card {
+  background: #fff;
+  border-radius: 12px; /* Slightly round corners for a more polished look */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* A bit deeper shadow for a floating effect */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 15px; /* Adds space between cards */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slightly raise the card on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit:contain;
+  border-bottom: 2px solid #f2f2f2; /* Adds separation between the image and content */
+}
+
+.product-info {
+  padding: 20px;
+  color: #333; /* Darker text for better readability */
+}
+
+.product-name {
+  font-size: 1.4rem; /* Slightly smaller to make it look more balanced */
+  color: #222; /* Darker color for emphasis */
+  margin-bottom: 8px;
+  font-weight: 600; /* Slightly bolder for emphasis */
+  line-height: 1.3;
+}
+
+.product-details {
+  color: #777;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  line-height: 1.5; /* Improved line height for readability */
+}
+
+.product-date {
+  color: #555; /* Slightly darker color for better visibility */
+  font-size: 0.85rem;
+  font-style: italic; /* Makes the timestamp feel like a secondary text */
+  margin-bottom: 12px;
+}
+
+.product-location {
+  font-size: 0.9rem;
+  color: #333; /* Color consistency with product name */
+  font-weight: 500; /* Bold to stand out as a key piece of information */
+  margin-bottom: 12px;
+}
+
+.product-brand {
+  font-size: 0.9rem;
+  color: #444; /* Slightly darker color for brand */
+  margin-bottom: 5px;
+}
+
+.product-color {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+

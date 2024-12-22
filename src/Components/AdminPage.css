@@ -1,0 +1,219 @@
+/* General Page Styling */
+.admin-page {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.admin-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Button Styles */
+.upload-btn, .logout-btn, .submit-btn, .remove-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.upload-btn {
+    background-color: #000;
+    color: white;
+}
+
+.upload-btn:hover {
+    background-color: #333;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+.submit-btn {
+    background-color: #010c04;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #252525;
+}
+
+.submit-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.remove-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it is above other elements */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    animation: fadeIn 0.3s ease; /* Fade-in effect */
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #dc3545;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #a71d2a;
+}
+
+/* Table Styles */
+.items-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.items-table th,
+.items-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #000;
+}
+
+.items-table img {
+    border-radius: 8px;
+}
+
+/* Form Styles */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #000;
+}
+
+.form-group input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Admin Login Styles */
+.admin-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.admin-login h1 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.admin-login .form-group {
+    margin-bottom: 15px;
+}
+
+.admin-login .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.admin-login .form-group input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-login button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.admin-login button:hover {
+    background-color: #333;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
